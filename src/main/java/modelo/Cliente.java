@@ -68,7 +68,6 @@ public class Cliente {
 	
 	public static Cliente busqueda(String codigo) {
 		return (Cliente)clientes.get(codigo);
-		
 	}
 	
 }

@@ -5,7 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Resultados de la busqueda</title>
-<jsp:useBean id="info" type="modelo.Cliente" scope="request"></jsp:useBean>
+<jsp:useBean id="info" type="modelo.Cliente" scope="request"></jsp:useBean> <!-- Vinculando con el servlet -->>
 </head>
 <body>
 <h3>Busqueda exitosa</h3>

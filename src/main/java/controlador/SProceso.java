@@ -1,5 +1,5 @@
 package controlador;
-import modelo.Cliente;
+import modelo.Cliente;//Importando al modelo
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -12,13 +12,14 @@ public class SProceso extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		processRequest(request,response);
+		processRequest(request,response); //iniciando nuevo método en modo GET
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		processRequest(request,response);
+		processRequest(request,response); //iniciando nuevo método en modo POST
 	}
 	
+	//Nuevo método
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//codigo
 		String codigo = request.getParameter("txtCodigo");
